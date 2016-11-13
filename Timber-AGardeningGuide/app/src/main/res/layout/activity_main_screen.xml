@@ -13,5 +13,47 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="Hello and Welcome to Timber!"
+        android:textSize="25dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView1"
+        />
+
+    <TextView
+        android:layout_marginTop="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Options For Searching Plants"
+        android:textSize="25dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView2"
+        />
+
+    <Button
+        android:text="Search by Picture"
+        android:textSize="20dp"
+        android:layout_width="300dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:id="@+id/photoSearch_btn"
+        android:background="#9ccc65"
+
+        android:textAllCaps="false" />
+
+    <Button
+        android:text="Manual Search"
+        android:textSize="20dp"
+        android:layout_width="300dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/photoSearch_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:id="@+id/manualSearch_btn"
+        android:background="#9ccc65"
+
+        android:textAllCaps="false" />
+
+
 </RelativeLayout>
