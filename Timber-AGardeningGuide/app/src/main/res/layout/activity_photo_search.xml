@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_photo_search"
     android:layout_width="match_parent"
@@ -42,6 +43,46 @@
         android:background="#9ccc65"
         android:textAllCaps="false"
 
+        />
+
+    <TextView
+        android:text="Search Results"
+        android:layout_width="400px"
+        android:layout_height="45px"
+        android:textSize="40px"
+        android:layout_below="@+id/start_btn"
+        android:layout_alignLeft="@+id/first_ImgBtn"
+        android:layout_alignStart="@+id/first_ImgBtn"
+        android:layout_marginTop="10dp"
+        android:id="@+id/textView2"
+        android:visibility="invisible"
+        />
+
+    <ImageButton
+        android:layout_width="250px"
+        android:layout_height="250px"
+        app:srcCompat="@drawable/flower3"
+        android:layout_below="@+id/textView2"
+        android:layout_alignLeft="@+id/start_btn"
+        android:layout_alignStart="@+id/start_btn"
+        android:layout_marginTop="20dp"
+        android:id="@+id/first_ImgBtn"
+        android:scaleType="centerCrop"
+        android:visibility="invisible"
+        />
+
+    <ImageButton
+        android:layout_width="250px"
+        android:layout_height="250px"
+        app:srcCompat="@drawable/flower"
+        android:id="@+id/second_ImgBtn"
+        android:scaleType="centerCrop"
+        android:layout_marginRight="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_alignTop="@+id/first_ImgBtn"
+        android:layout_alignRight="@+id/start_btn"
+        android:layout_alignEnd="@+id/start_btn"
+        android:visibility="invisible"
         />
 
 

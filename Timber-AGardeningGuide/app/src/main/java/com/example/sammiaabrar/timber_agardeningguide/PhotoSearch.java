@@ -41,7 +41,20 @@ public class PhotoSearch extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
-        Bitmap thumbnail = (Bitmap) data.getExtras().get("data");
-        imageView.setImageBitmap(thumbnail);
+        //This is just code to get the actual picture to display
+        //Bitmap thumbnail = (Bitmap) data.getExtras().get("data");
+        //imageView.setImageBitmap(thumbnail);
+
+        //This is to get the picture of the flower to display
+        imageView.setImageResource(R.drawable.flower3);
+
+        //This is the unhide the results
+        View hide = findViewById(R.id.first_ImgBtn);
+        hide.setVisibility(View.VISIBLE);
+        hide = findViewById(R.id.second_ImgBtn);
+        hide.setVisibility(View.VISIBLE);
+        hide = findViewById(R.id.textView2);
+        hide.setVisibility(View.VISIBLE);
+
     }
 }
