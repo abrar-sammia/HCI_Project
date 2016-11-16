@@ -30,27 +30,12 @@ public class PhotoSearch extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent camera_intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-//                File file = getFile();
-//                camera_intent.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(file));
                 startActivityForResult(camera_intent,CAM_REQUEST);
 
             }
         });
 
     }
-//
-//    private File getFile(){
-//
-//        File folder = new File("sdcard/Timber/Pictures");
-//
-//        if (!folder.exists()){
-//            folder.mkdir();
-//        }
-//
-//        File image_file = new File(folder,"plant_image.jpg");
-//
-//        return image_file;
-//    }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
