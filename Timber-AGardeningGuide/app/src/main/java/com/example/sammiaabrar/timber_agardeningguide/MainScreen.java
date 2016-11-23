@@ -36,8 +36,8 @@ public class MainScreen extends AppCompatActivity {
                 manual_btn.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        Intent intent = new Intent(MainScreen.this,MapsActivity.class);
-                        startActivity(intent);
+                        //Intent intent = new Intent(MainScreen.this,Replace_with_your_activity.class);
+                        //startActivity(intent);
                     }
                 });
             }
