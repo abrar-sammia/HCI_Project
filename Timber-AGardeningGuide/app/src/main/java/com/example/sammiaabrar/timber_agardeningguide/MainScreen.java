@@ -15,7 +15,7 @@ public class MainScreen extends AppCompatActivity {
 
         //These are the variables for the buttons
         Button photo_btn = (Button) findViewById(R.id.photoSearch_btn);
-        Button manual_btn = (Button) findViewById(R.id.manualSearch_btn);
+        final Button manual_btn = (Button) findViewById(R.id.manualSearch_btn);
 
         //This is how to switch to a photosearch activity
         photo_btn.setOnClickListener(new View.OnClickListener() {
@@ -31,6 +31,15 @@ public class MainScreen extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //TODO: Fill in this part with the correct avticity
+
+                //This is just tp test the map
+                manual_btn.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Intent intent = new Intent(MainScreen.this,MapsActivity.class);
+                        startActivity(intent);
+                    }
+                });
             }
         });
 
