@@ -36,7 +36,7 @@ public class MainScreen extends AppCompatActivity {
                 manual_btn.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        Intent intent = new Intent(MainScreen.this,PlantDescription.class);
+                        Intent intent = new Intent(MainScreen.this,ManualSearch.class);
                         startActivity(intent);
                     }
                 });

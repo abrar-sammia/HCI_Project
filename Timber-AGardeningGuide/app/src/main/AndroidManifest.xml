@@ -46,7 +46,8 @@
         <activity
             android:name=".PlantDescription"
             android:label="@string/title_activity_plant_description"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ManualSearch"></activity>
     </application>
 
 </manifest>
