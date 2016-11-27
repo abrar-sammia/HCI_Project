@@ -1,8 +1,11 @@
 package com.example.sammiaabrar.timber_agardeningguide;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.view.WindowManager;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.ListView;
@@ -39,6 +42,14 @@ public class ManualSearch extends AppCompatActivity {
             i++;
             
         }
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Intent intent = new Intent(ManualSearch.this,PlantDescription.class);
+                startActivity(intent);
+            }
+        });
 
     }
 
