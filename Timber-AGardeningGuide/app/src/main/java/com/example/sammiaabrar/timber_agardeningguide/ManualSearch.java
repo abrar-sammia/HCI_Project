@@ -5,13 +5,14 @@ import android.os.Bundle;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
+import android.widget.ListView;
 
 import java.util.ArrayList;
 
 public class ManualSearch extends AppCompatActivity {
 
     private ArrayList<Integer> preferences = new ArrayList<Integer>();
+    private int[] flowers;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +23,22 @@ public class ManualSearch extends AppCompatActivity {
 
         createPreferences();
         populateRow();
+
+        ListView listView = (ListView) findViewById(R.id.results_List);
+        MyAdapter adapter = new MyAdapter(getApplicationContext(),R.layout.row_layout);
+        listView.setAdapter(adapter);
+
+        intializeFlowers();
+        String[] flower_Names = getResources().getStringArray(R.array.flower_names);
+
+        int i = 0;
+        for (String name: flower_Names) {
+
+            FlowerProvider new_Flower  =new FlowerProvider(flowers[i],name);
+            adapter.add(new_Flower);
+            i++;
+            
+        }
 
     }
 
@@ -58,6 +75,25 @@ public class ManualSearch extends AppCompatActivity {
             layout.addView(new_Btn);
 
         }
+    }
+
+
+    private void intializeFlowers() {
+
+        int[] flowers_List = {R.drawable.flower_3,
+            R.drawable.flower_4,
+            R.drawable.flower_5,
+            R.drawable.flower_6,
+            R.drawable.flower_7,
+            R.drawable.flower_8,
+            R.drawable.flower_9,
+            R.drawable.flower_10,
+            R.drawable.flower_11,
+            R.drawable.flower_12,
+            R.drawable.flower_13
+        };
+
+        flowers = flowers_List;
     }
 
 }

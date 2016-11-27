@@ -17,4 +17,19 @@
         "To help prevent mildew and rotting, store them in living sphagnum moss.\n\n"
     </string>
     <string name="action_settings">Settings</string>
+
+    <string-array name="flower_names">
+        <item>Lily</item>
+        <item>Holly</item>
+        <item>Jasmine</item>
+        <item>Daisy</item>
+        <item>Poppy</item>
+        <item>Rose</item>
+        <item>Alyssum</item>
+        <item>Iris</item>
+        <item>Violet</item>
+        <item>Ivy</item>
+        <item>Aster</item>
+    </string-array>
+    
 </resources>
