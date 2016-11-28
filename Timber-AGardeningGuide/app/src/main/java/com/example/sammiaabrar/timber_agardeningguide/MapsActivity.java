@@ -40,8 +40,10 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
         // Add a marker in Home Depot and move the camera
         LatLng homeDepot = new LatLng(51.081148, -114.107303);
-        mMap.addMarker(new MarkerOptions().position(homeDepot).title("Home Depot"));
+        mMap.addMarker(new MarkerOptions().position(homeDepot).title("$4.99 at Home Depot"));
+        mMap.moveCamera(CameraUpdateFactory.zoomIn());
         mMap.moveCamera(CameraUpdateFactory.newLatLng(homeDepot));
+
 
         //Todo: Add more Location to the map
         //Todo: see if you can also add store contact info

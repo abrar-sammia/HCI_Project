@@ -1,5 +1,6 @@
 package com.example.sammiaabrar.timber_agardeningguide;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -30,8 +31,15 @@ public class PlantDescription extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Map Functionality Coming Soon!", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+
+                Intent intent = new Intent(PlantDescription.this,MapsActivity.class);
+                startActivity(intent);
+
+
+//                Snackbar.make(view, "Map Functionality Coming Soon!", Snackbar.LENGTH_LONG)
+//                        .setAction("Action", null).show();
+
+
             }
         });
     }
